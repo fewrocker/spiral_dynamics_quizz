@@ -1,0 +1,36 @@
+<div class="wrapper-question">
+  <div class="container-question">
+
+    <% if @question_nature == 'agree' %>
+
+
+      <h1 class="question-agree-directions">
+        What is your point-of-view about <span class="question-agree-subject"> <%= @question_subject %>? </span>
+      </h1>
+      <h2 class="question-agree-subdirections">
+        Select from the options how much you agree/disagree with each statement below:
+      </h2>
+
+      <% @questions.each do |question| %>
+        <div class="agree-each-question">
+          <h2 class="agree-question-statement"> "<%= question.text %>" </h2>
+          <ul class="agree-list-options list-inline">
+            <li class="agree-list-option-1 agree-list-option">Strongly disagree</li>
+            <li class="agree-list-option-2 agree-list-option">Disagree</li>
+            <li class="agree-list-option-3 agree-list-option">Neutral</li>
+            <li class="agree-list-option-4 agree-list-option">Agree</li>
+            <li class="agree-list-option-5 agree-list-option">Strongly agree</li>
+          </ul>
+        </div>
+      <% end %>
+    <% end %>
+
+  </div>
+</div>
+
+
+
+
+
+
+

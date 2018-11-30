@@ -1,0 +1,65 @@
+<% if @question_nature == 'mchoice' %>
+  <div class="wrapper-question-mchoice">
+    <div class="container-question-mchoice">
+
+      <h1 class="question-mchoice-directions">
+        What is your point-of-view about <span class="question-mchoice-subject"> <%= @question.subject %>? </span>
+      </h1>
+      <h2 class="question-mchoice-subdirections">
+        Select the statement which best represents your point of view:
+      </h2>
+
+      <% @options_scramble.each do |option| %>
+
+        <h2 class="mchoice-option">
+          <i class="far fa-square check-icon"></i> <span class="mchoice-option-text">"<%= option %>"</span>
+        </h2>
+
+      <% end %>
+
+      <div class="submit-button-container-mchoice">
+        <form action="/answer" method="post">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <%= hidden_field_tag :question_number, @question.number %>
+          <%= hidden_field_tag :options_order, @options_order %>
+          <input type="text" name="answer_selected" id="opt-select" style="display: none">
+          <input type="submit" id="final-submit-btn" class="btn btn-primary proceed-btn" value="Proceed">
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+<% elsif @question_nature == 'ranking' %>
+  <div class="wrapper-question-ranking">
+    <div class="container-question-ranking">
+
+      <h1 class="question-ranking-directions">
+        <%= @question.subject %>
+      </h1>
+      <h2 class="question-ranking-subdirections">
+        Drag and drop the following items so that higher up in the list, the more that item represents your point-of-view
+      </h2>
+
+      <% @options_scramble.each do |option| %>
+
+        <h2 class="ranking-option">
+          <span class="ranking-option-text">"<%= option %>"</span>
+        </h2>
+
+      <% end %>
+
+      <div class="submit-button-container-ranking">
+        <form action="/answer" method="post">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <%= hidden_field_tag :question_number, @question.number %>
+          <%= hidden_field_tag :options_order, @options_order %>
+          <input type="text" name="answer_selected" id="opt-select" style="display: none">
+          <input type="submit" id="final-submit-btn" class="btn btn-primary proceed-btn" value="Proceed">
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+<% end %>
