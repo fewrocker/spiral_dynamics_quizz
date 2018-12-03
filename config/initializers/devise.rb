@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '7dfcf3f1b3b127a526ebe39f2b7ec6663880baadfc48b97f7038d72cac5020d453068c2583212de85e924eeeb188da1d11ecae8602767ecbf4baaeecb9610cea'
-  
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -168,7 +168,7 @@ Devise.setup do |config|
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
   # to give user feedback and not to assert the e-mail validity.
-  config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  config.email_regexp = /.*/
 
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
