@@ -26,11 +26,16 @@
 }
 
 .all-user-result-email-col {
-  width: 30vw;
+  width: 25vw;
 }
 
 .all-user-result-color-col {
   width: 10vw;
+  text-align: center;
+}
+
+.all-user-result-user-progress {
+  text-align: center;
 }
 
 .all-user-result-row {
@@ -57,4 +62,10 @@
 
 .all-user-result-yellow {
   background-color: rgba(255,255,220,0.5);
+}
+
+.all-user-result-progress {
+  background-color: rgba(200,200,200,1);
+  text-align: center;
+  width: 10vw;
 }

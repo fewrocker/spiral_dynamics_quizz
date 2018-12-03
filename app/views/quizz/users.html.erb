@@ -9,6 +9,7 @@
         <td class="all-user-result-color-col">Orange</td>
         <td class="all-user-result-color-col">Green</td>
         <td class="all-user-result-color-col">Yellow</td>
+        <td class="all-user-result-user-progress">Progress</td>
       </tr>
 
       <% @users.each do |user| %>
@@ -18,6 +19,7 @@
           <td class="all-user-result-orange text-center"> <%= @result_collection[@users.index(user)][1] %>% </td>
           <td class="all-user-result-green text-center"> <%= @result_collection[@users.index(user)][2] %>% </td>
           <td class="all-user-result-yellow text-center"> <%= @result_collection[@users.index(user)][3] %>% </td>
+          <td class="all-user-result-progress"> <%= User.find_by(email: user).progress %> / <%= Question.all.length %>  </td>
         </tr>
       <% end %>
 
