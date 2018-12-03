@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
     # Initialize all scores as 0 (floating point since some scores will be floating points)
     score = [0.to_f, 0.to_f, 0.to_f, 0.to_f]
 
-    score_per_mchoice = 1.5
-    score_per_mchoice_other = -0.5
+    score_per_mchoice = 1
+    score_per_mchoice_other = -0.3
     score_ranking_12 = [2, 1.6, 1.2, 0.8, 0.4, 0, 0, -0.4, -0.8, -1.2, -1.6, -2]
     score_ranking_8 = [2, 1.2, 0.6, 0, 0, -0.6, -1.2, -2]
     score_statement = [-1, -0.5, 0, 0.5, 1]
@@ -18,9 +18,10 @@ class ApplicationController < ActionController::Base
     # Points given are score_per_mchoice
     # Take points to all the other colors given by score_per_mchoice_other
     answers_to_score.each do |answer|
-      (0..score.length).to_a do |int|
-        int == answer.text.to_i ? score[int] += score_per_mchoice : score[int] += score_per_mchoice_other
-      end
+      # Remove points from all scores
+      score.map! { |scr| scr += score_per_mchoice_other }
+      # Give the points back to the selected option plus the points for being the selected one
+      score[answer.text.to_i] += (score_per_mchoice - score_per_mchoice_other)
     end
 
     # --> Scoring ranking questions
@@ -83,7 +84,7 @@ class ApplicationController < ActionController::Base
         scr = max_result_pos if scr > max_result_pos
         resonance = (scr.abs / max_result_pos.to_f)
       else
-        scr = max_result_neg if scr > max_result_neg
+        scr = max_result_neg if scr.abs > max_result_neg
         resonance = -(scr.abs / max_result_neg.to_f)
       end
       result_resonance << (resonance * 100).round(1)
