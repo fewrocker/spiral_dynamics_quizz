@@ -159,6 +159,7 @@ class QuizzController < ApplicationController
 
       # Define the user which the score will be calculated
       user = current_user
+      # Calculate score using function in app controller
       @result_resonance = get_user_score(user)
 
       # List of qualities to be shown, sorted alphabetically

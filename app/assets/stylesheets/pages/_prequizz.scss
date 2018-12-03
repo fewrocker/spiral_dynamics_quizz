@@ -1,0 +1,55 @@
+.wrapper-prequizz {
+  background-color: lightblue;
+  height: auto;
+  padding: 50px 200px;
+}
+
+.container-prequizz {
+  padding: 40px 50px;
+  background-color: rgba(245,245,245,1);
+  border: 1px solid rgba(200,200,200,1);
+}
+
+.prequizz-title {
+  font-size: 40px;
+  color: rgba(50,50,50,1);
+  font-weight: bold;
+  font-family: $roboto;
+}
+
+.prequizz-subtitle {
+  font-size: 32px;
+  color: rgba(50,50,50,1);
+  font-family: $roboto;
+}
+
+.prequizz-guidelines {
+
+}
+
+.prequizz-instruction {
+  text-align: justify;
+  font-size: 20px;
+  color: rgba(50,50,50,1);
+
+  strong {
+    color: rgba(50,50,100,1);
+  }
+}
+
+.startnow-btn-prequizz {
+  width: 240px;
+  height: 60px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  background-color: rgba(64,128,255,1);
+
+  &:hover {
+    background-color: rgba(54,118,245,1);
+  }
+}
