@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
     # Initialize all scores as 0 (floating point since some scores will be floating points)
     score = [0.to_f, 0.to_f, 0.to_f, 0.to_f]
 
-    score_per_mchoice = 1
-    score_per_mchoice_other = -0.3
+    score_per_mchoice = 1.5
+    score_per_mchoice_other = -0.5
     score_ranking_12 = [2, 1.6, 1.2, 0.8, 0.4, 0, 0, -0.4, -0.8, -1.2, -1.6, -2]
     score_ranking_8 = [2, 1.2, 0.6, 0, 0, -0.6, -1.2, -2]
     score_statement = [-1, -0.5, 0, 0.5, 1]
