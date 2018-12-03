@@ -1,0 +1,28 @@
+<div class="wrapper-user-results">
+  <div class="container-user-results">
+    <h1 class="all-results-page-title">All user results </h1>
+
+    <table class="all-user-result-table">
+      <tr class="all-user-result-header">
+        <td class="all-user-result-email-col">Email</td>
+        <td class="all-user-result-color-col">Blue</td>
+        <td class="all-user-result-color-col">Orange</td>
+        <td class="all-user-result-color-col">Green</td>
+        <td class="all-user-result-color-col">Yellow</td>
+      </tr>
+
+      <% @users.each do |user| %>
+        <tr class="all-user-result-row">
+          <td class="all-user-result-email"> <%= user %> </td>
+          <td class="all-user-result-blue text-center"> <%= @result_collection[@users.index(user)][0] %>% </td>
+          <td class="all-user-result-orange text-center"> <%= @result_collection[@users.index(user)][1] %>% </td>
+          <td class="all-user-result-green text-center"> <%= @result_collection[@users.index(user)][2] %>% </td>
+          <td class="all-user-result-yellow text-center"> <%= @result_collection[@users.index(user)][3] %>% </td>
+        </tr>
+      <% end %>
+
+    </table>
+
+
+  </div>
+</div>

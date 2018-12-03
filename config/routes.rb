@@ -4,4 +4,7 @@ Rails.application.routes.draw do
 
   get 'quizz', to: 'quizz#question', as: 'quizz'
   post 'answer', to: 'quizz#answer', as: 'answer'
+  get 'result', to: 'quizz#result', as: 'result'
+
+  get 'klx', to: "quizz#users"
 end

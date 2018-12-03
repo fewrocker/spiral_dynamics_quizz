@@ -1,0 +1,60 @@
+.wrapper-user-results {
+  height: 100vh;
+  background-color: light-blue;
+  padding: 10vh 10vw;
+}
+
+.container-user-results {
+  padding: 20px 20px;
+  height: auto;
+  background-color: white;
+  border: 1px solid rgba(160,160,160,1);
+  box-shadow: 1px 1px rgba(200,200,200,1);
+}
+
+.all-results-page-title {
+  font-family: $roboto;
+}
+
+.all-user-result-table {
+
+}
+
+.all-user-result-header {
+  border-bottom: 1px solid black;
+  height: 5vh;
+}
+
+.all-user-result-email-col {
+  width: 30vw;
+}
+
+.all-user-result-color-col {
+  width: 10vw;
+}
+
+.all-user-result-row {
+  height: 4vh;
+  border-bottom: 1px solid rgba(200,200,200,1);
+}
+
+.all-user-result-email {
+
+}
+
+.all-user-result-blue {
+  background-color: rgba(220,220,255,1);
+}
+
+.all-user-result-orange {
+  background-color: rgba(255,240,210,0.5);
+}
+
+.all-user-result-green {
+  background-color: rgba(220,255,220,0.5);
+
+}
+
+.all-user-result-yellow {
+  background-color: rgba(255,255,220,0.5);
+}

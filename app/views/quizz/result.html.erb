@@ -1,0 +1,80 @@
+<div class="wrapper-result">
+  <div class="container-result">
+    <h1 class="result-page-title">Your results </h1>
+
+    <table class="result-resonance-table">
+      <tr class="result-resonance-row-header">
+        <td class="result-resonance-first-column result-resonance-header-col">Color</td>
+        <td class="result-resonance-second-column result-resonance-header-col">Traits</td>
+        <td class="result-resonance-third-column result-resonance-header-col">World population / World power</td>
+        <td class="result-resonance-fourth-column result-resonance-header-col">Your resonance</td>
+      </tr>
+
+      <tr class="result-resonance-row result-resonance-blue">
+        <td class="result-resonance-color-name">
+          Blue
+        </td>
+        <td class="result-resonance-color-qualities">
+          <% @blue_qualities.each do |quality| %>
+            <span class='each-quality'><%= quality %></span><%= ', ' if quality != @blue_qualities.last%>
+          <% end %>
+        <td class="result-resonance-color-stats">
+          <strong><%= @blue_stats[0] %> </strong>/<strong> <%= @blue_stats[1] %></strong>
+        </td>
+        <td class="result-resonance-result">
+          <%= @result_resonance[0] %>%
+        </td>
+
+        <tr class="result-resonance-row result-resonance-orange">
+          <td class="result-resonance-color-name">
+            Orange
+          </td>
+          <td class="result-resonance-color-qualities">
+            <% @orange_qualities.each do |quality| %>
+              <span class='each-quality'><%= quality %></span><%= ', ' if quality != @orange_qualities.last%>
+            <% end %>
+          <td class="result-resonance-color-stats">
+            <strong><%= @orange_stats[0] %> </strong>/<strong> <%= @orange_stats[1] %></strong>
+          </td>
+          <td class="result-resonance-result">
+            <%= @result_resonance[1] %>%
+          </td>
+
+          <tr class="result-resonance-row result-resonance-green">
+            <td class="result-resonance-color-name">
+              Green
+            </td>
+            <td class="result-resonance-color-qualities">
+              <% @green_qualities.each do |quality| %>
+                <span class='each-quality'><%= quality %></span><%= ', ' if quality != @green_qualities.last%>
+              <% end %>
+            <td class="result-resonance-color-stats">
+              <strong><%= @green_stats[0] %> </strong>/<strong> <%= @green_stats[1] %></strong>
+            </td>
+            <td class="result-resonance-result">
+              <%= @result_resonance[2] %>%
+            </td>
+
+            <tr class="result-resonance-row result-resonance-yellow">
+              <td class="result-resonance-color-name">
+                Yellow
+              </td>
+              <td class="result-resonance-color-qualities">
+                <% @yellow_qualities.each do |quality| %>
+                  <span class='each-quality'><%= quality %></span><%= ', ' if quality != @yellow_qualities.last%>
+                <% end %>
+              <td class="result-resonance-color-stats">
+                <strong><%= @yellow_stats[0] %> </strong>/<strong> <%= @yellow_stats[1] %></strong>
+              </td>
+              <td class="result-resonance-result">
+                <%= @result_resonance[3] %>%
+              </td>
+
+
+
+      </tr>
+    </table>
+
+
+  </div>
+</div>

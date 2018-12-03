@@ -1,0 +1,86 @@
+.wrapper-result {
+  height: 100vh;
+  background-color: light-blue;
+  padding: 2vh 10vw;
+}
+
+.container-result {
+
+}
+
+.result-page-title {
+  font-family: $roboto;
+}
+
+.result-resonance-table {
+
+}
+
+.result-resonance-row-header {
+  border-bottom: 1px solid black;
+}
+
+.result-resonance-first-column {
+  width: 10vw;
+}
+
+.result-resonance-second-column {
+    width: 40vw;
+}
+
+.result-resonance-third-column {
+    width: 30vw;
+}
+
+.result-resonance-fourth-column {
+    width: 20vw;
+}
+
+.result-resonance-header-col {
+  text-align: center;
+  font-size: 25px;
+}
+
+.result-resonance-row {
+  border-bottom: 1px solid rgba(200,200,200,1);
+}
+
+.result-resonance-blue {
+  background-color: rgba(220,220,255,0.5);
+}
+
+.result-resonance-orange {
+  background-color: rgba(255,240,210,0.5);
+}
+
+.result-resonance-green {
+  background-color: rgba(220,255,220,0.5);
+}
+
+.result-resonance-yellow {
+  background-color: rgba(255,255,220,0.5);
+}
+
+.result-resonance-color-name {
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.result-resonance-color-qualities {
+  padding: 10px 30px;
+  text-align: justify;
+}
+
+.result-resonance-color-stats {
+  text-align: center;
+  font-size: 20px;
+}
+
+.result-resonance-result {
+  text-align: center;
+}
+
+.each-quality {
+
+}

@@ -21,8 +21,16 @@ mChoiceSquares = document.getElementsByClassName("check-icon")
 
 mChoiceOptionInput = document.getElementById("opt-select")
 
+//Start with fake button
+proceedButtonTrue = document.getElementsByClassName("proceed-btn-mchoice")[0]
+proceedButtonFake = document.getElementsByClassName("fake-proceed-button")[0]
+proceedButtonTrue.style.display = "none"
+
 Array.prototype.forEach.call(mChoiceOptions, option => {
   option.addEventListener('click', function() {
+    proceedButtonTrue.style.display = ""
+    proceedButtonFake.style.display = "none"
+
     optionClicked = (index(option) - 5)/2
 
     //Unselect all options: square + text decoration

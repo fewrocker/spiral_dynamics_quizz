@@ -99,6 +99,8 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
+    nouislider-rails (8.2.1)
+      railties (>= 3.1)
     orm_adapter (0.5.0)
     pg (0.21.0)
     pry (0.12.2)
@@ -210,6 +212,7 @@ DEPENDENCIES
   font-awesome-sass (~> 5.0.9)
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
+  nouislider-rails
   pg (~> 0.21)
   pry-byebug
   pry-rails
