@@ -20,10 +20,14 @@ user_saved = []
 
 User.all.sort_by {|user| user.id }.each do |user|
 
-  ans_length = (0..answer_save_all[user_saved.length].length - 1).to_a
-  answer_save_all[user_saved.length - 1].
+  ans_length = answer_save_all[user_saved.length].length
+  if ans_length == 0
+    length_array = []
+  else
+    length_array = (0..ans_length - 1).to_a
+  end
 
-  (0..answer_save_all[user_saved.length - 1].length - 1).to_a.each do |int|
+  length_array.each do |int|
     a = Answer.new
     a.user = user
     a.question = Question.find_by(number: int + 1)
