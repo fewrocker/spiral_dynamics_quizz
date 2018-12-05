@@ -32,10 +32,11 @@
           <%= hidden_field_tag :question_number, @question.number %>
           <%= hidden_field_tag :options_order, @options_order %>
           <input type="text" name="answer_selected" id="opt-select" style="display: none">
-          <input type="submit" id="final-submit-btn" class="btn btn-primary proceed-btn-mchoice" value="Proceed">
+          <input type="submit" id="final-submit-btn" class="btn btn-primary proceed-btn-mchoice" value="Proceed" style="display:none;">
+          <div class="btn fake-proceed-button">Select an answer</div>
         </form>
 
-        <div class="btn fake-proceed-button">Select an answer</div>
+
       </div>
 
     </div>
@@ -77,6 +78,8 @@
         </form>
       </div>
 
+
+
     </div>
   </div>
 
@@ -107,16 +110,20 @@
           </h1>
           <div class="statement-slider-div">
             <input type="range" min="0" max="4" value="2" step="1" class="statement-slider" id="test">
-            <h2 class="statement-slider-placeholder slider-placeholder-1">Strongly disagree</h2>
-            <h2 class="statement-slider-placeholder slider-placeholder-2">Disagree</h2>
-            <h2 class="statement-slider-placeholder slider-placeholder-3">Neutral</h2>
-            <h2 class="statement-slider-placeholder slider-placeholder-4">Agree</h2>
-            <h2 class="statement-slider-placeholder slider-placeholder-5">Strongly agree</h2>
-            <i class="fas fa-caret-up slider-caret-1 slider-caret"></i>
-            <i class="fas fa-caret-up slider-caret-2 slider-caret"></i>
-            <i class="fas fa-caret-up slider-caret-3 slider-caret"></i>
-            <i class="fas fa-caret-up slider-caret-4 slider-caret"></i>
-            <i class="fas fa-caret-up slider-caret-5 slider-caret"></i>
+            <div class="statement-slider-carets">
+              <i class="fas fa-caret-up slider-caret-1 slider-caret"></i>
+              <i class="fas fa-caret-up slider-caret-2 slider-caret"></i>
+              <i class="fas fa-caret-up slider-caret-3 slider-caret"></i>
+              <i class="fas fa-caret-up slider-caret-4 slider-caret"></i>
+              <i class="fas fa-caret-up slider-caret-5 slider-caret"></i>
+            </div>
+            <div class="statement-slider-placeholders">
+              <h2 class="statement-slider-placeholder slider-placeholder-1">Strongly disagree</h2>
+              <h2 class="statement-slider-placeholder slider-placeholder-2">Disagree</h2>
+              <h2 class="statement-slider-placeholder slider-placeholder-3">Neutral</h2>
+              <h2 class="statement-slider-placeholder slider-placeholder-4">Agree</h2>
+              <h2 class="statement-slider-placeholder slider-placeholder-5">Strongly agree</h2>
+            </div>
           </div>
         </div>
       <% end %>
