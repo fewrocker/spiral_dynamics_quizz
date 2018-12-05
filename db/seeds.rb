@@ -16,7 +16,7 @@ q.nature = 'mchoice'
 q.subject = 'money'
 q.options << 'It is important to build a solid carreer in order to live a comfortable life, provide for the family and create certainty for the future'
 q.options << 'The more money, the more success, possessions and recognition I will have, and the happier I will be'
-q.options << 'Money is important, but blind pursuit of it creates a sick society with income inequality and which destroys the environment'
+q.options << 'Money is important, but blindy pursuing it creates a sick society which destroys the environment and has a huge income inequality'
 q.options << "Your career should not be focused on having more money than you need, but in reaching a life purpose and creating value for the world"
 q.save
 qnumber += 1
@@ -26,10 +26,10 @@ q = Question.new
 q.number = qnumber
 q.nature = 'mchoice'
 q.subject = 'the economy'
-q.options << 'The economy is important to have a strong country, traditions and values. It might be necessary to get into conflicts to protect the economy of our nation'
+q.options << 'The economy is important to have a strong nation, traditions and values. It might be necessary to get into conflicts to protect the economy of our nation'
 q.options << 'Less regulation, more competition and profit seeking will generate a better economy for everybody'
-q.options << 'Economy should be more regulatd to ensure equality and prevent damage caused by excessive capitalism'
-q.options << 'Economy is a very complex system, and all perspectives and theories, from left to right, should be studied to devise a more functional solution'
+q.options << 'Economy should be more regulatd to ensure equality and prevent damage caused by the excesses of capitalism'
+q.options << 'Economy is a very complex system, and many perspectives and theories, from left to right, should be integrated to devise a more functional solution'
 q.save
 qnumber += 1
 puts "Created question \##{q.number}"
@@ -38,9 +38,9 @@ q = Question.new
 q.number = qnumber
 q.nature = 'mchoice'
 q.subject = 'politics'
-q.options << 'A firm president, rules and laws are very important to maintain civilization, traditions and national identity'
+q.options << 'A firm president, rules and laws are very important to maintain civilization, traditions and the national identity'
 q.options << 'Economy comes first: the state should be smaller and the market should be less regulated so that companies can bring more value to society'
-q.options << 'Being politically engaged, speaking out and joining movements and protests is vital to produce change in the right direction'
+q.options << 'Being politically engaged and joining discussion and protests is necessary to produce change in the right direction'
 q.options << 'Politics is a rather complicated system full of interest clashes and nothing really changes. We need to integrate in a better way to have progress'
 q.save
 qnumber += 1
@@ -50,10 +50,10 @@ q = Question.new
 q.number = qnumber
 q.nature = 'mchoice'
 q.subject = 'science'
-q.options << "Scientific knowledge is important for develoment, but it should not be used as a tool to deny the highest truth, God"
+q.options << "Scientific study is important for develoment, but it should not be used as a tool to deny the highest truth, God"
 q.options << 'Science is absolute truth. It generates progress and technology which ultimately makes the world a better place for everyone'
-q.options << "Science and progress can help the world's problems, but not alone. We also need love, peace and empathy to make the World a better place"
-q.options << 'Science is a great tool and a huge advancement compared to religious dogma. However, reason and logic are still not sufficient to get to the truth'
+q.options << "Science and technology can help the world's problems, but only if more people have access to it and if it is used to create more well-being for everyone"
+q.options << 'Science is a great tool and a huge advancement compared to religious dogma. However, reason and logic are still not sufficient to get to the absolute truth'
 q.save
 qnumber += 1
 puts "Created question \##{q.number}"
@@ -63,9 +63,9 @@ q.number = qnumber
 q.nature = 'mchoice'
 q.subject = 'religion'
 q.options << 'Religion is the ultimate truth. People nowadays are losing touch with faith and this is is causing moral values to degrade'
-q.options << 'Religion makes no logical sense. If people were more rational and less dogmatic the world would be better'
+q.options << 'Religion makes no logical sense. If people were more rational and less dogmatic the world would be developing faster'
 q.options << "Religions are very opressive. It's views on humanistic subjects such as homosexuality and gender equality are archaic"
-q.options << "Religions might, at their cores, point out to some deeper truth. However, the institutions have corrupted these teachings with dogma"
+q.options << "Religions might, at their cores, point out to some deeper truth. However, the institutions have corrupted these teachings with ideology and dogma"
 q.save
 qnumber += 1
 puts "Created question \##{q.number}"
@@ -77,7 +77,7 @@ q.subject = 'the world'
 q.options << "The world is controlled by a higher power that punishes evil and eventually rewards the good works and righteous living"
 q.options << "The world is full of resources to develop and opportunities to make things better and bring prosperity to everyone"
 q.options << "The habitat wherein humanity can find love and purposes through loving and sharing. We have to do our best to preserve the environment"
-q.options << "A complex and chaotic system, in which forces mutually influence each other and function as a single living organism. Change is the only constant"
+q.options << "A complex and chaotic system, in which inumerous forces mutually influence each other and function as a single living unit"
 
 q.save
 qnumber += 1
@@ -87,10 +87,10 @@ q = Question.new
 q.number = qnumber
 q.nature = 'mchoice'
 q.subject = 'others'
-q.options << "We have to care for ourselves, our family and our country first and fight against the enemies and evil"
+q.options << "We have to take care of ourselves, our family and our country first and fight against the enemies and push away bad people"
 q.options << "The self comes first. You should strive to achieve success and it is good if you can provide value to other people with your work"
 q.options << "We have to care more about the others and the extreme suffering and poverty that a huge part of the populaton faces"
-q.options << "It is important to develop the self to be able to really have an impact and create meaningful change in the world and help everyone"
+q.options << "It is important to develop the self to be able to really have an impact and create meaningful change in the world and help other human beings"
 q.save
 qnumber += 1
 puts "Created question \##{q.number}"
@@ -165,7 +165,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = 'People fail to see that beliefs such as the power of free market and fighting for minotiries rights can be dogmatic just like religion'
+q.subject = "People fail to see that beliefs such as the power of free market and fighting for minotiries' rights can be dogmatic just like religion"
 q.text = 'yellow'
 q.save
 qnumber += 1
@@ -174,7 +174,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = 'People nowadays have lost touch with faith and values, and you see that in a lot of sexual promiscuity and lack of direction in life'
+q.subject = 'People nowadays have lost touch with faith and values. Just have a look at all the sexual promiscuity and lack of direction in life'
 q.text = 'blue'
 q.save
 qnumber += 1
@@ -183,7 +183,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = "statement"
-q.subject = "People don't realize that capitalism is inherently unfair, and majority groups have a head start compared with minorities, and this is wrong"
+q.subject = "People don't realize that capitalism is inherently unfair, and some groups have a head start compared with others. This is wrong"
 q.text = 'green'
 q.save
 qnumber += 1
@@ -203,7 +203,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = 'Low taxes and competition among companies seeking profits creates more prosperity and a better world for everyone'
+q.subject = 'Low taxes and competition among profit seeking companies create more prosperity and a better world for everyone'
 q.text = 'orange'
 q.save
 qnumber += 1
@@ -287,9 +287,3 @@ q.options << "Radical open-mindedness"
 q.save
 qnumber += 1
 puts "Created question \##{q.number}"
-
-
-
-
-
-
