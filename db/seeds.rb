@@ -154,7 +154,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = 'Society is lost in a blind pursuit of money and shallow materialism that creates misery and suffering for millions of individuals'
+q.subject = 'Society is lost in a blind pursuit of money and shallow materialism that creates misery and suffering for millions of people'
 q.text = 'green'
 q.save
 qnumber += 1
@@ -165,7 +165,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = "People fail to see that beliefs such as the power of free market and fighting for minotiries' rights can be dogmatic just like religion"
+q.subject = "Beliefs such as the power of free market and fighting for minotiries' rights are frequently as dogmatic and ideological as religious beliefs"
 q.text = 'yellow'
 q.save
 qnumber += 1
@@ -174,7 +174,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = 'People nowadays have lost touch with faith and values. Just have a look at all the sexual promiscuity and lack of direction in life'
+q.subject = 'People have lost touch with faith and good moral values: the youth is full of sexual promiscuity and lack of direction in life'
 q.text = 'blue'
 q.save
 qnumber += 1
@@ -183,7 +183,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = "statement"
-q.subject = "People don't realize that capitalism is inherently unfair, and some groups have a head start compared with others. This is wrong"
+q.subject = "Capitalism is inherently unfair, and some groups have a head start compared to others. This is wrong"
 q.text = 'green'
 q.save
 qnumber += 1
@@ -192,7 +192,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = 'The free market, when it is allowed to do so, provides tremendous opportunity for people of all backgrounds, interests and abilities'
+q.subject = 'The combination of a free market and smaller state provides tremendous opportunity for people of all backgrounds, interests and abilities'
 q.text = 'orange'
 q.save
 qnumber += 1
@@ -203,7 +203,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = 'Low taxes and competition among profit seeking companies create more prosperity and a better world for everyone'
+q.subject = 'The human body and mind are a product of millions of years of evolution and in a nutshell are incredibly complex machines'
 q.text = 'orange'
 q.save
 qnumber += 1
@@ -221,7 +221,7 @@ puts "Created question \##{q.number}"
 q = Question.new
 q.number = qnumber
 q.nature = 'statement'
-q.subject = "It is really important to always respect authorities, follow laws and obey rules so society can work well"
+q.subject = "Always respect authorities, follow all laws and obey all rules so our national can work well"
 q.text = 'blue'
 q.save
 qnumber += 1

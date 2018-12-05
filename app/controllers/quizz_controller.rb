@@ -10,7 +10,6 @@ class QuizzController < ApplicationController
       # Save the question nature to render the correct view for the question
       @question_nature = @question.nature
 
-
       # Question type: mchoice or ranking
       if @question_nature == 'mchoice'
         # Randomize options order
@@ -149,7 +148,6 @@ class QuizzController < ApplicationController
         redirect_to result_path
       end
     end
-
   end
 
   def result
