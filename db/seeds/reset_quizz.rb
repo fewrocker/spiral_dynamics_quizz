@@ -1,11 +1,10 @@
 answer_save_all = []
 
-User.all.each do |user|
+User.all.sort_by {|user| user.id }.each do |user|
   answer_save_user = []
 
   user.answers.each do |answer|
     answer_save_user << answer.text
-    p answer.text
   end
 
   answer_save_all << answer_save_user
@@ -19,8 +18,10 @@ end
 
 user_saved = []
 
-User.all.each do |user|
+User.all.sort_by {|user| user.id }.each do |user|
 
+  ans_length = (0..answer_save_all[user_saved.length].length - 1).to_a
+  answer_save_all[user_saved.length - 1].
 
   (0..answer_save_all[user_saved.length - 1].length - 1).to_a.each do |int|
     a = Answer.new
